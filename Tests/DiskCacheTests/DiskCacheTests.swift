@@ -10,21 +10,21 @@ final class DiskCacheTests: XCTestCase {
         let cache = try DiskCache(storageType: .temporary(.custom("temp")))
         let pathCompnents = cache.directoryURL.pathComponents
 
-        XCTAssertEqual(pathCompnents.suffix(3), ["Caches", "com.mobelux.cache", "temp"])
+        XCTAssertEqual(pathCompnents.suffix(3), ["Caches", "com.jagreenwood.cache", "temp"])
     }
 
     func testPermanentStoragePath() throws {
         let cache = try DiskCache(storageType: .permanent(.custom("perm")))
         let pathCompnents = cache.directoryURL.pathComponents
 
-        XCTAssertEqual(pathCompnents.suffix(3), ["Documents", "com.mobelux.cache", "perm"])
+        XCTAssertEqual(pathCompnents.suffix(3), ["Documents", "com.jagreenwood.cache", "perm"])
     }
 
     func testSharedStoragePath() throws {
         let cache = try DiskCache(storageType: .shared("app-group-id", subDirectory: .custom("shared")))
         let pathCompnents = cache.directoryURL.pathComponents
 
-        XCTAssertEqual(pathCompnents.suffix(4), ["Group Containers", "app-group-id", "com.mobelux.cache", "shared"])
+        XCTAssertEqual(pathCompnents.suffix(4), ["Group Containers", "app-group-id", "com.jagreenwood.cache", "shared"])
     }
 
     func testCacheData() async throws {

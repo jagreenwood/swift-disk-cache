@@ -14,7 +14,7 @@ on:
 jobs:
   test:
     name: Test
-    uses: Mobelux/DiskCache/.github/workflows/test.yml@main
+    uses: jagreenwood/DiskCache/.github/workflows/test.yml@main
 
   release:
     name: Release
@@ -39,7 +39,7 @@ jobs:
 
       - name: Bump version
         id: bump
-        uses: Mobelux/bump-version-action@v1
+        uses: jagreenwood/bump-version-action@v1
         with:
           release-type: ${{ inputs.release_type }}
           version: ${{ steps.get_current_version.outputs.result }}

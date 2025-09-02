@@ -3,7 +3,6 @@
 //  DiskCache
 //
 //  Created by Jeremy Greenwood on 5/8/19.
-//  Copyright © 2019 Mobelux. All rights reserved.
 //
 
 import Foundation

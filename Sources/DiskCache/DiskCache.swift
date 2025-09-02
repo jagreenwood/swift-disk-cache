@@ -148,7 +148,7 @@ extension DiskCache {
             }
         }
 
-        var directoryURL = basePath.appendingPathComponent("com.mobelux.cache")
+        var directoryURL = basePath.appendingPathComponent("com.jagreenwood.cache")
 
         if let subDirectory = storageType.subDirectory {
             directoryURL.appendPathComponent(subDirectory, isDirectory: true)

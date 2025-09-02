@@ -13,7 +13,7 @@ Swift 5.5x toolchain with Swift Package Manager, iOS 13
 Add `DiskCache` to your `Packages.swift` file:
 
 ```swift
-.package(url: "https://github.com/Mobelux/DiskCache.git", from: "2.0.0"),
+.package(url: "https://github.com/jagreenwood/DiskCache.git", from: "2.0.0"),
 ```
 
 ## ⚙️ Usage
