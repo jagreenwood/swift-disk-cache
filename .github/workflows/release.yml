@@ -14,7 +14,7 @@ on:
 jobs:
   test:
     name: Test
-    uses: jagreenwood/DiskCache/.github/workflows/test.yml@main
+    uses: jagreenwood/swift-disk-cache/.github/workflows/test.yml@main
 
   release:
     name: Release
