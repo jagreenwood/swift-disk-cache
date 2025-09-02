@@ -1,4 +1,4 @@
-# DiskCache
+# swift-disk-cache
 
 DiskCache is lightweight caching libary intended to persist arbitrary data to disk.
 
@@ -13,7 +13,7 @@ Swift 5.5x toolchain with Swift Package Manager, iOS 13
 Add `DiskCache` to your `Packages.swift` file:
 
 ```swift
-.package(url: "https://github.com/jagreenwood/DiskCache.git", from: "2.0.0"),
+.package(url: "https://github.com/jagreenwood/swift-disk-cache.git", from: "2.0.0"),
 ```
 
 ## ⚙️ Usage
